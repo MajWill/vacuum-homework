@@ -1,0 +1,138 @@
+\documentclass{beamer}
+\usetheme{CENIDETDIE}
+\setbeamertemplate{caption}[numbered]
+\usefonttheme[onlymath]{serif}
+
+% ------------------------------------------------------------------------------------------------
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{helvet}
+\usepackage{graphicx} % Allows including images
+\usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
+\numberwithin{figure}{section}
+\numberwithin{equation}{section}
+\usepackage{natbib}
+
+% ------------------------------------------------------------------------------------------------
+
+\title{Bias in Machine Learning}
+\subtitle{}
+\author{Group 6}
+\date{October 23, 2023}
+\institute{\url{www.units.it}}
+
+% ------------------------------------------------------------------------------------------------
+
+\begin{document}
+
+% ------------------------------------------------------------------------------------------------
+
+\begin{frame}[plain,t]
+\titlepage
+\end{frame}
+
+% ------------------------------------------------------------------------------------------------
+
+\begin{frame}[plain,noframenumbering]
+  \addtocounter{framenumber}{-1}
+  \scriptsize
+%   \thispagestyle{empty}
+  \frametitle{TOC}
+  \setbeamertemplate{section in toc}[sections numbered]
+  \tableofcontents[hideallsubsections]
+\end{frame}
+
+% ------------------------------------------------------------------------------------------------
+
+\section{Introduction}
+\begin{frame}
+ \frametitle{Introduction}
+ Many researchers have pointed to the possibility that machine learning algorithms will produce classifiers that display racial, gender, or other forms of bias.
+ \begin{itemize}
+  \item How does this bias arise?
+  \item Is it possible to constrain machine learning algorithms to produce rigorously fair predictions? 
+\end{itemize}
+\end{frame}
+
+% ------------------------------------------------------------------------------------------------
+
+\section{Causes}
+\begin{frame}
+ \frametitle{Causes of Bias in ML}
+ \begin{itemize}
+    \item Bad training data
+    \item Data selection 
+    \item Discriminating features
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+ \frametitle{Bad training data}
+ If the dataset used to train a machine learning algorithm contains racial, gender, or other biases, the algorithm can learn and reflect those biases. For example, if historical data contains gender or race discrimination in the past, the algorithm can learn to reproduce such discrimination.
+\end{frame}
+
+\begin{frame}
+ \frametitle{Data selection}
+ The selection of training data can influence the presence of bias. If the data used to train a model is collected in ways that reflect existing biases or is incomplete, the model may reflect those biases.
+\end{frame}
+
+\begin{frame}
+ \frametitle{Discriminating features}
+ The features selected for model training can lead to discrimination. For example, if you use characteristics that are related to racial or gender factors, the model can learn to make predictions based on those characteristics, even if it is not appropriate.
+\end{frame}
+
+% ------------------------------------------------------------------------------------------------
+
+\section{Strategies to mitigate}
+\begin{frame}
+\frametitle{Strategies to mitigate bias}
+ \begin{itemize}
+    \item Data Cleaning
+    \item Balanced representation 
+    \item Fairness-aware learning
+    \item Continuous auditing and evaluation
+    \item Regulation and legislation
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+ \frametitle{Data Cleaning}
+    It is important to carefully examine your training data to identify and remove existing biases. This may require removing problematic data or reducing the importance of certain features.
+\end{frame}
+
+\begin{frame}
+ \frametitle{Balanced representation}
+    Make sure that the training dataset equally represents the different categories in play, so as to avoid overfitting or underfitting of some categories.
+\end{frame}
+
+\begin{frame}
+ \frametitle{Fairness-aware learning}
+    Use fairness-aware machine learning approaches that explicitly seek to reduce bias in models and produce fairer and more balanced predictions.
+\end{frame}
+
+\begin{frame}
+ \frametitle{Continuous auditing and evaluation}
+    Continuously monitor machine learning models in production to identify and correct any emerging biases. This may include the use of fairness metrics to evaluate model performance.
+\end{frame}
+
+\begin{frame}
+ \frametitle{Regulation and legislation}
+    Authorities and organizations can introduce regulations and guidelines to ensure justice and fairness in the use of machine learning algorithms.
+\end{frame}
+
+% ------------------------------------------------------------------------------------------------
+
+\section{Conclusion}
+\begin{frame}
+ \frametitle{Conclusion}
+    While it is not possible to completely eliminate all biases, it is possible to reduce them and manage them to produce more rigorously fair and balanced forecasts. Awareness and commitment to addressing this issue are key to developing and using AI responsibly.
+\end{frame}
+
+% ------------------------------------------------------------------------------------------------
+
+\ThankYouFrame
+
+% ------------------------------------------------------------------------------------------------
+
+\end{document}
