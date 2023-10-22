@@ -1,8 +1,8 @@
 # Homework 1
 
-## Exercise 1
+## Exercise 1 and Exercise 2
 
-Uploaded the PDF file named Exercise 1 containing the text with our findings.
+Uploaded the PDF file named AI.pdf containing the text with our findings about exercise 1 and the text about our presentation for exercise 2. Uploaded the PDF file named 
 
 ## Exercise 2
 
